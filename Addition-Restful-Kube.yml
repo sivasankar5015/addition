@@ -11,9 +11,9 @@ spec:
     targetPort: 8090
     port: 8090
     nodePort: 30809
-	
----	
-	
+
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -35,7 +35,7 @@ spec:
         image: siva3100/Additionapp:0.$BUILD_NUMBER
         ports:
         - containerPort: 8090
-		
+
 ---
 
 kind: Service
