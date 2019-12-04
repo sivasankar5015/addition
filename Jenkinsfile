@@ -20,8 +20,8 @@ pipeline {
 		stage ("Docker-Build-Services") {
 			steps {
 				sh 'pwd'
-				sh "docker build -t additionapp:0.${env.BUILD_ID} additionapp/"
-				sh "docker build -t restfulexample:0.${env.BUILD_ID} restfulexample/"
+				sh "docker build -t additionapp:0.${env.BUILD_ID} ./"
+				sh "docker build -t restfulexample:0.${env.BUILD_ID} ./"
 			}
 		}
 		stage ("Tagging-docker-images") {
