@@ -40,7 +40,7 @@ pipeline {
             		steps {
                 		kubernetesDeploy(
                     			kubeconfigId: 'kubeconfig',
-                    			configs: 'flight-booking-kube.yml'
+                    			configs: 'Addition-Restful-Kube.yml'
                 		)
             		}
         	}
